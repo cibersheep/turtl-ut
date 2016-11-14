@@ -1,20 +1,35 @@
-Zork I is made from different projects:
+Turtl UT is made from source from official github:
 
-# Parchmenet javascript Z-machine interpreter
-https://github.com/curiousdannii/parchment
+Encrypt, sync and share notes, pictures, etc. Online and offline
+Take notes, bookmark websites, and store documents for sensitive projects.
 
-License BSD
+Unofficial build from official repositories.
 
-# Zork I
-http://ifdb.tads.org/viewgame?id=4gxk83ja4twckm6j
+What is Turtl?
+It's a private place to keep your notes, research, passwords, bookmarks, dream logs, photos, documents and anything else you want kept safe. Turtl's easy tagging and filtering make it ideal for organization and research whether for personal or professional projects.
 
-License Freeware
+It does work:
+- Offline mode
+- Autologin
+- Access to content hub and camera
 
-# ubuntu-html5-template
+It does not work:
+- Dowloading picures to device (Turtl)
+- Locale translation (bad configuration?). The app come with some languages (Catalan, German, French, Hungarian, Polish and Ukrainian) but they don't load.
+
+Known issues:
+- If you're offline and leave the app in the background it will go blank.
+- Making a picture bigger than 1.5MB(?) might be two much and webwiew restarts or goes blank.
+
+Build from source:
+https://github.com/turtl
+License: GNU GPLv3
++changes I made: coverted .woff fonts into .otf (click builder was complaining about them) and changed refrences in the css. The rest of the code is untouched.
+
+Also, using html5 template from Alan Pope (thanks again!)
 https://github.com/popey/ubuntu-html5-template
-Template for making a click package out of any html5 app
+License: MIT
 
-License MIT
 
 Usage
 Put your HTML5 app in www/
