@@ -1,0 +1,52 @@
+.fixed-fix {
+  -webkit-transform: translateZ(0);
+}
+.persona h1 {
+  margin: 0 0 4rem 0;
+  text-align: center;
+}
+.persona h3 {
+  text-align: center;
+}
+.persona .head {
+  margin: 0 0 4rem 0;
+  padding: 10rem 0;
+  background: #fff;
+  border-radius: 2rem;
+  box-shadow: 0 1rem 3rem rgba(20, 20, 20, 0.2);
+}
+.persona .key {
+  margin: 0 0 16rem 0;
+  padding: 10rem;
+  text-align: center;
+  background: #fff;
+  border-radius: 2rem;
+  box-shadow: 0 1rem 3rem rgba(20, 20, 20, 0.2);
+}
+.persona .key svg {
+  width: 20rem;
+  height: 20rem;
+  margin: 0 3rem -4rem 0;
+}
+.persona .key svg path {
+  fill: #65a5ee;
+}
+.persona .key icon.lock {
+  color: #83b362;
+}
+.persona .key icon.more {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+.persona .key code {
+  background: none;
+}
+.persona .key p:last-child {
+  padding-bottom: 0;
+}
+.personas-edit input + p {
+  margin-top: 32rem;
+}
+.personas-edit p {
+  font-size: 14rem;
+}

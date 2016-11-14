@@ -1,0 +1,31 @@
+<div class="{{formclass}} clear interface">
+	<form class="standard-form" autocomplete="off">
+		{{{content}}}
+		{{#if buttons}}
+			<div class="button-row clear">
+				{{#if footer_actions.length}}
+					<ul>
+						{{#each footer_actions}}
+							<li>
+								<a href="#{{name}}" rel="{{name}}">
+									{{icon icon}}
+								</a>
+							</li>
+						{{/each}}
+					</ul>
+				{{/if}}
+				<div class="desc"></div>
+
+				{{#if show_cancel}}
+					<div class="button flat cancel">
+						<span>{{t 'Cancel'}}</span>
+					</div>
+				{{/if}}
+				<div class="button flat submit">
+					<input type="submit" {{#if tabindex}}tabindex="{{tabindex}}"{{/if}} value="{{t action}}">
+				</div>
+			</div>
+		{{/if}}
+	</form>
+</div>
+

@@ -1,0 +1,11 @@
+.fixed-fix {
+  -webkit-transform: translateZ(0);
+}
+.feedback form {
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+.feedback .content p {
+  font-size: 15rem;
+}

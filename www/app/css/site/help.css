@@ -1,0 +1,32 @@
+.fixed-fix {
+  -webkit-transform: translateZ(0);
+}
+.markdown-tutorial {
+  padding: 16rem;
+}
+.markdown-tutorial > ul {
+  margin: 0 0 32rem 0;
+  padding: 0;
+  list-style: none;
+  white-space: nowrap;
+}
+.markdown-tutorial > ul > li {
+  border-bottom: 1px solid #eee;
+}
+.markdown-tutorial > ul > li > div {
+  display: inline-block;
+  width: 48%;
+  padding: 12rem 0 12rem 2%;
+  vertical-align: middle;
+  white-space: normal;
+  word-wrap: break-word;
+}
+.markdown-tutorial > ul > li > div:first-child {
+  padding-left: 0;
+  padding-right: 2%;
+  font-family: monospace;
+}
+.markdown-tutorial > ul > li > div space {
+  font-size: 0;
+  line-height: 0;
+}

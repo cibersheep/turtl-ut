@@ -1,0 +1,36 @@
+.fixed-fix {
+  -webkit-transform: translateZ(0);
+}
+ul.tags {
+  list-style: none;
+}
+ul.tags li {
+  float: left;
+  margin: 0 10rem 10rem 0;
+  padding: 3rem 6rem 4rem 6rem;
+  font-size: 15rem;
+  white-space: nowrap;
+  color: #444;
+  cursor: pointer;
+  background: #d5d5d5;
+  border: 1rem solid #bbb;
+  border-radius: 4rem;
+}
+ul.tags li.sel {
+  color: #83b362;
+  background: #444;
+}
+ul.tags li.exclude {
+  color: #333;
+  background: #ddaaaa;
+}
+ul.tags li.empty {
+  color: #888;
+  border: 1rem solid #bbb;
+}
+ul.tags li.disabled {
+  color: #aaa;
+}
+ul.tags li.exclude.disabled {
+  color: #333;
+}

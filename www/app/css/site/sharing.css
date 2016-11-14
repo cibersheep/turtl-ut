@@ -1,0 +1,45 @@
+.fixed-fix {
+  -webkit-transform: translateZ(0);
+}
+.sharing > .section {
+  margin-bottom: 24rem;
+}
+.sharing .padded {
+  width: 94%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (min-width: 800px) {
+  .sharing .padded {
+    width: 640rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.sharing .padded .extra {
+  float: right;
+}
+.sharing .padded p {
+  padding-bottom: 0;
+  color: #888;
+}
+.sharing .invite-code {
+  padding: 0 0 16rem 0;
+}
+.sharing .invite-code form,
+.sharing .unlocker form {
+  padding: 6rem 4% 4% 12rem;
+}
+.sharing .invite-code form .submit,
+.sharing .unlocker form .submit {
+  text-align: center;
+}
+.sharing .unlocker {
+  padding: 0;
+}
+.sharing .unlocker form {
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  background: #f5f5f5;
+}

@@ -1,0 +1,75 @@
+.fixed-fix {
+  -webkit-transform: translateZ(0);
+}
+.settings > ul.item-list {
+  margin-bottom: 16rem;
+}
+.settings > ul.item-list > li {
+  padding: 0;
+}
+.settings > ul.item-list > li a {
+  display: block;
+  padding: 16rem 9rem;
+  font-size: 17rem;
+  color: #444;
+}
+.settings > ul.item-list > li a icon {
+  float: right;
+  margin: 2rem 0 0 0;
+  color: #444;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.settings > .info {
+  padding: 8rem;
+  text-align: center;
+  font-size: 15rem;
+}
+.settings > .info em {
+  color: #1870d5;
+}
+.settings-password form.standard-form {
+  width: 94%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 24rem;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+@media only screen and (min-width: 800px) {
+  .settings-password form.standard-form {
+    width: 640rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.settings-password .section {
+  margin: 0 0 24rem 0;
+}
+.settings-password .section h3 {
+  margin: 0 0 12rem 0;
+  font-size: 16rem;
+}
+.settings-password p.load {
+  display: inline-block;
+  visibility: hidden;
+  width: 0;
+  margin: 0 0 0 6rem;
+  padding: 0 0 0 0;
+  vertical-align: middle;
+  overflow: visible;
+}
+.settings-password p.load.active {
+  visibility: visible;
+}
+.settings-password p.load svg {
+  width: 24rem;
+  height: 24rem;
+}
+.settings-password p.load svg path {
+  fill: #65a5ee;
+}
+.settings-delete-account form.standard-form {
+  padding-bottom: 32rem;
+}

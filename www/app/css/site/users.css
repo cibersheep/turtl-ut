@@ -1,0 +1,201 @@
+.fixed-fix {
+  -webkit-transform: translateZ(0);
+}
+.user-login form,
+.user-join form,
+.user-persona-join form {
+  padding-top: 38rem;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+.user-login .autologin,
+.user-join .autologin,
+.user-persona-join .autologin {
+  text-align: center;
+  font-size: 16rem;
+}
+.user-login .buttons,
+.user-join .buttons,
+.user-persona-join .buttons {
+  margin: 32rem 0 0 0;
+}
+.user-login .button,
+.user-join .button,
+.user-persona-join .button {
+  margin: 0 0 16rem 0;
+}
+.user-login p.load,
+.user-join p.load,
+.user-persona-join p.load {
+  display: inline-block;
+  visibility: hidden;
+  width: 0;
+  margin: 0 0 0 6rem;
+  padding: 0 0 0 0;
+  vertical-align: middle;
+  overflow: visible;
+}
+.user-login p.load.active,
+.user-join p.load.active,
+.user-persona-join p.load.active {
+  visibility: visible;
+}
+.user-login p.load svg,
+.user-join p.load svg,
+.user-persona-join p.load svg {
+  width: 24rem;
+  height: 24rem;
+}
+.user-login p.load svg path,
+.user-join p.load svg path,
+.user-persona-join p.load svg path {
+  fill: #65a5ee;
+}
+.user-login a.open-settings,
+.user-join a.open-settings,
+.user-persona-join a.open-settings {
+  display: block;
+  margin: 32rem 0 8rem 0;
+  font-size: 1.3em;
+  text-align: center;
+}
+.user-login a.open-settings.active icon,
+.user-join a.open-settings.active icon,
+.user-persona-join a.open-settings.active icon {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.user-login a.open-settings icon,
+.user-join a.open-settings icon,
+.user-persona-join a.open-settings icon {
+  font-size: 14rem;
+  color: #83b362;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.user-login p.settings,
+.user-join p.settings,
+.user-persona-join p.settings {
+  margin: 0 0 16rem 0;
+  padding: 10rem;
+  background: #fff;
+  border-radius: 2rem;
+  box-shadow: 0 1rem 3rem rgba(20, 20, 20, 0.2);
+}
+.user-login p.settings label,
+.user-join p.settings label,
+.user-persona-join p.settings label {
+  color: #888;
+}
+.user-login p.settings small,
+.user-join p.settings small,
+.user-persona-join p.settings small {
+  font-size: 0.7em;
+}
+.user-login p.join,
+.user-join p.join,
+.user-persona-join p.join {
+  text-align: center;
+}
+.user-login .strength,
+.user-join .strength,
+.user-persona-join .strength {
+  margin: 16rem 8rem 0 8rem;
+}
+.user-login .strength p,
+.user-join .strength p,
+.user-persona-join .strength p {
+  padding: 4px 0;
+  font-size: 14rem;
+  text-align: center;
+}
+.user-login .strength.level-too-short .inner,
+.user-join .strength.level-too-short .inner,
+.user-persona-join .strength.level-too-short .inner {
+  background: #e85c5c;
+}
+.user-login .strength.level-too-short span,
+.user-join .strength.level-too-short span,
+.user-persona-join .strength.level-too-short span {
+  color: #e85c5c;
+}
+.user-login .strength.level-weak .inner,
+.user-join .strength.level-weak .inner,
+.user-persona-join .strength.level-weak .inner {
+  background: #e88755;
+}
+.user-login .strength.level-weak span,
+.user-join .strength.level-weak span,
+.user-persona-join .strength.level-weak span {
+  color: #e88755;
+}
+.user-login .strength.level-ok .inner,
+.user-join .strength.level-ok .inner,
+.user-persona-join .strength.level-ok .inner {
+  background: #9ab389;
+}
+.user-login .strength.level-ok span,
+.user-join .strength.level-ok span,
+.user-persona-join .strength.level-ok span {
+  color: #9ab389;
+}
+.user-login .strength.level-good .inner,
+.user-join .strength.level-good .inner,
+.user-persona-join .strength.level-good .inner {
+  background: #83b362;
+}
+.user-login .strength.level-good span,
+.user-join .strength.level-good span,
+.user-persona-join .strength.level-good span {
+  color: #83b362;
+}
+.user-login .strength.level-great .inner,
+.user-join .strength.level-great .inner,
+.user-persona-join .strength.level-great .inner,
+.user-login .strength.level-excellent .inner,
+.user-join .strength.level-excellent .inner,
+.user-persona-join .strength.level-excellent .inner {
+  background: #65a5ee;
+}
+.user-login .strength.level-great span,
+.user-join .strength.level-great span,
+.user-persona-join .strength.level-great span,
+.user-login .strength.level-excellent span,
+.user-join .strength.level-excellent span,
+.user-persona-join .strength.level-excellent span {
+  color: #65a5ee;
+}
+.user-persona-join form {
+  padding-top: 12rem;
+}
+.user-join.confirm .confirm-text {
+  padding: 24rem 16rem 0 16rem;
+  font-size: .9em;
+  text-align: left;
+}
+.user-join.confirm .confirm-text em {
+  font-style: italic;
+}
+.user-join.confirm .buttons {
+  padding: 6rem 0 16rem 0;
+}
+.user-join.confirm .button {
+  margin-top: 0;
+}
+.user-main {
+  width: 700rem;
+  margin: 60rem auto 0 auto;
+}
+.user-main .login-main {
+  float: left;
+}
+.user-main .join-main {
+  float: right;
+  padding-left: 50rem;
+  border-left: 1rem solid #ccc;
+}

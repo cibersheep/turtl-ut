@@ -1,0 +1,625 @@
+.fixed-fix {
+  -webkit-transform: translateZ(0);
+}
+#main > .notes-container,
+#tmp-slide > .notes-container {
+  padding-top: 0;
+}
+.notes .list-container {
+  padding: 6.25rem 3.125rem;
+}
+.notes ul.note-list {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.notes ul.note-list li {
+  margin: 0 3.125rem 6.25rem 3.125rem;
+}
+.notes ul.note-list > li {
+  background: #fff;
+  border-radius: 2rem;
+  box-shadow: 0 1rem 3rem rgba(20, 20, 20, 0.2);
+  cursor: pointer;
+}
+.notes ul.note-list > li.crypto-error {
+  background: #fdd;
+}
+.notes ul.note-list > li .body {
+  max-height: 400rem;
+  overflow: hidden;
+}
+.notes ul.note-list > li .content {
+  width: auto;
+}
+.notes ul.note-list li.image {
+  max-height: 400rem;
+  overflow-y: hidden;
+}
+.notes ul.note-list.masonry > li {
+  float: left;
+  width: 48%;
+}
+@media only screen and (min-width: 500px) {
+  .notes ul.note-list.masonry > li {
+    width: 32%;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .notes .list-container {
+    padding: 1.25% 0 0 0;
+  }
+  .notes ul.note-list.masonry > li {
+    width: 23.6%;
+    margin: 0 0 1.25% 1.25%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .notes ul.note-list.masonry > li {
+    width: 18.6%;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .notes ul.note-list.masonry > li {
+    width: 15.26666666%;
+  }
+}
+.notes .paginate {
+  margin: 18px 0 16px 0;
+  text-align: center;
+}
+.notes .paginate a {
+  display: inline-block;
+  margin: 0 4rem;
+  padding: 4rem 9rem 4rem 15rem;
+  font-size: 18rem;
+  border-left: 1px solid #bbb;
+}
+.notes .paginate a:first-child {
+  border-left: 0;
+}
+.note p.empty {
+  padding: 10rem 0;
+  font-size: 13rem;
+  color: #888;
+  text-align: center;
+}
+.note .note-gutter .content {
+  width: 100%;
+}
+.note.text .note-gutter,
+.note.file .note-gutter,
+.note.link .note-gutter,
+.note.password .note-gutter {
+  padding: 6rem;
+}
+@media only screen and (min-width: 800px) {
+  .note.text .note-gutter,
+  .note.file .note-gutter,
+  .note.link .note-gutter,
+  .note.password .note-gutter {
+    padding: 16rem;
+  }
+}
+.note.image .backing {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  min-height: 44rem;
+  background: #222;
+}
+.note.image .backing span {
+  display: block;
+  font-size: 13rem;
+  text-align: center;
+}
+.note.image .backing span icon {
+  font-size: 20rem;
+  color: #888;
+}
+.note.image .backing span.has-size {
+  height: 0;
+}
+.note.image .backing span.has-size icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -10rem 0 0 -10rem;
+}
+.note.image .header-backing {
+  display: none;
+}
+.note.image img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+.note.image .content h1.main-title {
+  position: relative;
+  z-index: 11;
+  display: block;
+  height: 30rem;
+  margin: -34rem 0 3rem 0;
+  padding: 4rem 0 0 6%;
+  line-height: 30rem;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.45) 70%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.45) 70%);
+}
+@media only screen and (min-width: 800px) {
+  .note.image .content h1.main-title {
+    padding-left: 24rem;
+  }
+}
+.note.image.view .file + .note-gutter .content h1.main-title {
+  top: -34rem;
+}
+.note.image.preview:not(.view) .file {
+  display: none;
+}
+.note.image .note-gutter .content .body {
+  padding: 6rem;
+}
+@media only screen and (min-width: 800px) {
+  .note.image .note-gutter .content .body {
+    padding: 16rem;
+  }
+}
+.note.item.file.no-text.no-title .note-gutter {
+  padding: 0;
+}
+.note.item.file.no-text.no-title .file {
+  box-shadow: none;
+}
+.note .file {
+  height: 22rem;
+  padding: 6rem;
+  text-align: center;
+  background: #f5f5f5;
+  box-shadow: 0 1rem 3rem rgba(20, 20, 20, 0.2);
+}
+.note .file strong {
+  display: inline-block;
+  width: 100%;
+  font-size: 16rem;
+  line-height: 20rem;
+  font-weight: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.note .file strong icon {
+  width: 20rem;
+}
+.note .file strong svg {
+  display: none;
+  width: 20rem;
+  height: 20rem;
+  vertical-align: bottom;
+}
+.note .file strong.encrypting svg {
+  display: inline-block;
+}
+.note .file strong svg path {
+  fill: #65a5ee;
+}
+.note .file.decrypting strong icon {
+  display: none;
+}
+.note .file.decrypting strong svg {
+  display: inline-block;
+}
+.note .content h1:first-child {
+  word-wrap: break-word;
+}
+.note .content h1:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.note .content .main-title.password icon {
+  color: #83b362;
+}
+.note .content .main-title.password.active icon {
+  color: #e85c5c;
+}
+.note .content .show-password {
+  padding: 0 0 16rem 0;
+}
+.note .content .show-password form {
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
+}
+.note .content .show-password form input {
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+.note .content .body *:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.note > .color {
+  position: absolute;
+  z-index: 12;
+  display: block;
+  top: 3rem;
+  right: 3rem;
+  width: 12rem;
+  height: 12rem;
+  background: #83b362;
+  border: 1rem solid rgba(0, 0, 0, 0.2);
+  border-radius: 7rem;
+  box-shadow: 0 2rem 4rem 2rem rgba(20, 20, 20, 0.2);
+}
+.note > .color.blue {
+  background-color: #73b8d1;
+}
+.note > .color.red {
+  background-color: #e85c5c;
+}
+.note > .color.green {
+  background-color: #7bde76;
+}
+.note > .color.purple {
+  background-color: #9476de;
+}
+.note > .color.pink {
+  background-color: #de76d3;
+}
+.note > .color.brown {
+  background-color: #7f4e4e;
+}
+.note > .color.black {
+  background-color: #111;
+}
+.note .info-container {
+  display: block;
+  position: fixed;
+  -webkit-transform: translateZ(0);
+  z-index: 12;
+  bottom: 20rem;
+  right: 80rem;
+  -webkit-transition: opacity 0.3s, right 0.3s;
+  transition: opacity 0.3s, right 0.3s;
+}
+.note .info-container.scrolled {
+  opacity: 0;
+}
+.note .info-container.open {
+  right: 60rem;
+}
+.note .info-container.hidden {
+  display: none;
+}
+.note .info-container .preview {
+  width: 88rem;
+  height: 20rem;
+  padding: 6rem 3rem 1rem 3rem;
+  overflow: hidden;
+  text-align: center;
+  line-height: 18rem;
+  background: #83b362;
+  border-radius: 2rem;
+  border: 2rem solid #fff;
+  -webkit-transition: width 0.3s, height 0.3s;
+  transition: width 0.3s, height 0.3s;
+  box-shadow: 0 2rem 4rem 2rem rgba(20, 20, 20, 0.2);
+}
+.note .info-container.open .preview {
+  width: 240rem;
+  height: 86rem;
+}
+.note .info-container .preview ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.note .info-container .preview ul li {
+  display: inline-block;
+  margin: 0 4rem;
+  font-size: 15rem;
+  color: #fff;
+}
+.note .info-container .preview ul li icon {
+  margin: 0 3rem 0 0;
+}
+.note .info-container .info {
+  width: 234rem;
+  height: 100rem;
+  margin: 6rem 0 0 0;
+  padding: 3rem;
+  overflow: auto;
+  color: #fff;
+  text-align: left;
+}
+.note .info-container .info form.standard-form {
+  padding: 0 0 6rem 0;
+}
+.note .info-container .info form.standard-form input {
+  color: #fff;
+  background: none;
+  border-bottom-color: #fff;
+}
+.note .info-container .info .info-list {
+  margin: 0 0 12rem 0;
+}
+.note .info-container .info .info-list li:after {
+  content: ', ';
+}
+.note .info-container .info .info-list li:first-child:after,
+.note .info-container .info .info-list li:last-child:after {
+  content: '';
+}
+.note .info-container .info .info-list icon {
+  color: #fff;
+}
+.note-view .note .note-gutter {
+  padding-bottom: 64rem;
+}
+.note-view .note > .color {
+  width: 16rem;
+  height: 16rem;
+  border-radius: 9rem;
+}
+.note-view .note:not(.image) .note-gutter {
+  padding-top: 12rem;
+}
+.note-view:not(.note-image) .note > .color {
+  position: static;
+  float: right;
+  margin: 4rem 4rem 0 4rem;
+}
+.note-view.note-image header {
+  background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 110%);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 110%);
+  box-shadow: none;
+}
+.note-view.note-image header h1 em:before {
+  top: 13rem;
+  left: 3rem;
+  position: absolute;
+  z-index: -1;
+  display: block;
+  width: 0;
+  height: 0;
+  box-shadow: 0 0 48rem 24rem rgba(0, 0, 0, 0.3);
+  content: '';
+}
+.note-view.note-image header ul.actions > li .item-actions > a:before {
+  top: 15rem;
+  left: 31rem;
+  position: absolute;
+  z-index: -1;
+  display: block;
+  width: 0;
+  height: 0;
+  box-shadow: 0 0 48rem 24rem rgba(0, 0, 0, 0.3);
+  content: '';
+}
+.note-view.note-image header.scrolled {
+  background: none;
+}
+.note-view.note-image header.scrolled h1 em:before {
+  box-shadow: none;
+}
+.note-view.note-image header.scrolled ul.actions > li .item-actions > a:before {
+  box-shadow: none;
+}
+.note-view.note-image .note .backing {
+  min-height: 44rem;
+}
+.note-view.note-image .note .header-backing {
+  display: block;
+  position: fixed;
+  -webkit-transform: translateZ(0);
+  z-index: 9;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 44rem;
+  background: #222;
+}
+@media only screen and (min-width: 800px) {
+  .note-view.note-image .note .header-backing {
+    width: 90%;
+  }
+}
+.note-view.note-image .note .header-backing.hide {
+  display: none;
+}
+.note-view.note-image .note > .color {
+  top: auto;
+  right: 16rem;
+  margin: -10rem -3rem 0 0;
+}
+.note-view.note-image .note .note-gutter .content .body {
+  padding-top: 12rem;
+}
+.note-view.note-image .modal-gutter {
+  padding-top: 0;
+}
+.note-view .modal-gutter.closing .info-container {
+  display: none;
+}
+.note-view .modal-gutter.closing .note .header-backing,
+.note-view .modal-gutter.opening .note .header-backing {
+  display: none;
+}
+.note-boards {
+  margin: 0 0 16rem 0;
+  font-size: 14rem;
+  border-radius: 0;
+  -webkit-transition: border 0.3s;
+  transition: border 0.3s;
+}
+.note-boards icon {
+  float: left;
+  margin: 4rem 8rem 0 0;
+  font-size: 20rem;
+  color: #444;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.note-boards span {
+  display: inline-block;
+  padding: 3rem;
+  color: #83b362;
+}
+.note-boards ul {
+  list-style: none;
+}
+.note-boards ul li {
+  display: block;
+  float: left;
+  margin: 0 6rem 6rem 0;
+  padding: 3rem 5rem;
+  background: #eee;
+  border: 1rem solid #bbb;
+  border-radius: 2rem;
+}
+.notes-edit form {
+  padding-bottom: 16rem;
+}
+.notes-edit form .existing {
+  padding: 0 0 4rem 0;
+  font-size: 13rem;
+}
+.notes-edit form .existing em {
+  display: inline-block;
+  width: 14rem;
+  height: 14rem;
+  margin: 0 6rem 0 0;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  background: #65a5ee;
+  border-radius: 7rem;
+}
+.notes-edit form .url-or-file {
+  display: block;
+  padding: 8rem 0;
+  font-size: 14rem;
+  text-align: center;
+}
+.notes-edit form textarea {
+  width: 100%;
+  max-width: 100%;
+  height: 100rem;
+  resize: vertical;
+  font-family: monospace;
+}
+.notes-edit form .formatting {
+  margin: -14rem 0 16rem 0;
+  text-align: right;
+}
+.notes-edit form .formatting a[rel=formatting] {
+  display: block;
+  padding: 5rem 0;
+  font-size: 15rem;
+}
+.notes-edit form .file {
+  margin: 0 0 16rem 0;
+}
+.notes-edit form .file icon {
+  margin: 4rem 8rem 0 0;
+}
+.notes-edit form .file p {
+  margin: 0;
+  padding: 0;
+  font-size: 14rem;
+}
+.notes-edit form .file p.info {
+  width: 100%;
+  margin: 0 0 6rem 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.notes-edit form .file p.size {
+  float: left;
+  padding-left: 30rem;
+}
+.notes-edit form .file p.remove {
+  float: right;
+}
+.notes-edit form .file p.remove a icon {
+  margin-right: 0;
+}
+.notes-edit form .password.preview a.preview icon {
+  color: #83b362;
+}
+.notes-edit form .password a.preview {
+  position: absolute;
+  right: 6%;
+  margin: 12rem 0 0 0;
+}
+.notes-edit form .password a.preview icon {
+  font-size: 16rem;
+  color: #444;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.notes-edit form .boards-container {
+  cursor: pointer;
+}
+.notes-edit ul.colors {
+  margin: 0;
+  padding: 8rem 0 0 0;
+  list-style: none;
+  text-align: center;
+}
+.notes-edit ul.colors li {
+  display: inline-block;
+  margin: 0 6rem 6rem 6rem;
+  padding: 0 0 0 0;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.notes-edit ul.colors li.sel {
+  -webkit-transform: scale(1.35, 1.35);
+          transform: scale(1.35, 1.35);
+}
+.notes-edit ul.colors li span {
+  display: block;
+  width: 24rem;
+  height: 24rem;
+  border: 1rem solid #ccc;
+  border-radius: 4rem;
+}
+.notes-edit ul.colors .blue span {
+  background: #73b8d1;
+  border-color: #73b8d1;
+}
+.notes-edit ul.colors .red span {
+  background: #e85c5c;
+  border-color: #e85c5c;
+}
+.notes-edit ul.colors .green span {
+  background: #7bde76;
+  border-color: #7bde76;
+}
+.notes-edit ul.colors .purple span {
+  background: #9476de;
+  border-color: #9476de;
+}
+.notes-edit ul.colors .pink span {
+  background: #de76d3;
+  border-color: #de76d3;
+}
+.notes-edit ul.colors .brown span {
+  background: #7f4e4e;
+  border-color: #7f4e4e;
+}
+.notes-edit ul.colors .black span {
+  background: #111;
+  border-color: #111;
+}

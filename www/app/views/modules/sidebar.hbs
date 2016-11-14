@@ -1,0 +1,61 @@
+<div class="overlay {{#if open}}show{{/if}}"></div>
+<div class="inner">
+	<div class="gutter">
+		<ul>
+			<!--
+			<li>
+				<a href="/">
+					{{icon 'notes'}}
+					{{t 'All notes'}}
+				</a>
+			</li>
+			<li class="sep">
+				<a href="/boards">
+					{{icon 'boards'}}
+					{{t 'Boards'}}
+				</a>
+			</li>
+			<li rel="share">
+				<a href="/sharing">
+					{{icon 'share'}}
+					{{t 'Sharing'}}
+				</a>
+			</li>
+			-->
+			<li>
+				<a href="/settings">
+					{{icon 'account'}}
+					{{t 'Your settings'}}
+				</a>
+			</li>
+			<li>
+				<a href="/feedback">
+					{{icon 'feedback'}}
+					{{t 'Feedback'}}
+				</a>
+			</li>
+			<li>
+				<a href="/users/logout">
+					{{icon 'logout'}}
+					{{t 'Logout'}}
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="footer">
+		<div class="connection {{#if connected}}connected{{else}}disconnected{{/if}}">
+			{{icon 'connection'}}
+			<span class="connected">{{t 'Connected to the Turtl service'}}</span>
+			<span class="disconnected">{{t 'Offline mode'}}</span>
+		</div>
+		{{#if connected}}
+			<div class="sync">
+				{{#if last_sync}}<p>{{t 'Last sync: {{val}}' val=(ago-time last_sync)}}</p>{{/if}}
+				<div class="button sync">
+					<input type="button" class="button" value="{{t 'Sync now'}}">
+				</div>
+			</div>
+		{{/if}}
+	</div>
+</div>
+
