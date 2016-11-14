@@ -1,0 +1,14 @@
+{
+    "description":  "Take notes, bookmark websites, and store documents for sensitive projects.",
+    "framework":    "ubuntu-sdk-15.04.5",
+    "hooks": {
+        "turtl-ut": {
+            "apparmor": "app.json",
+            "desktop":  "app.desktop"
+        }
+    },
+    "maintainer":   "Joan CiberSheep <cibersheep@gmail.com>",
+    "name":         "turtl-ut.cibersheep",
+    "title":        "turtl-ut",
+    "version":      "0.1"
+}

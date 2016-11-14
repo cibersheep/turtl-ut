@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=turtl-ut
+Comment=Take notes, bookmark websites, and store documents for sensitive projects
+Exec=webapp-container --app-id="turtl-ut.cibersheep" $@ www/index.html
+Terminal=false
+Type=Application
+Categories=Utility;TextTools
+X-Ubuntu-Touch=true
+Icon=./icon.png
+X-Ubuntu-Splash-Color=#141414
