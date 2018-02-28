@@ -6,5 +6,6 @@ Terminal=false
 Type=Application
 Categories=Utility;TextTools
 X-Ubuntu-Touch=true
-Icon=./icon.png
+Icon=./icon.svg
 X-Ubuntu-Splash-Color=#141414
+X-Ubuntu-Splash-Image=./splash.svg
