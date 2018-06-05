@@ -1,5 +1,6 @@
 # IMPORTANT
-Project moved to [gitlab](https://gitlab.com/cibersheep/turtl-ut/)
+Project moved to [gitlab](https://gitlab.com/cibersheep/turtl-ut/).
+
 Install last version on Ubuntu Touch Mobile from https://open-store.io/app/turtl-ut.cibersheep
 
 Github project is deprecated
