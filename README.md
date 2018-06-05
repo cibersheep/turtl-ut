@@ -1,3 +1,9 @@
+# IMPORTANT
+Project moved to [gitlab](https://gitlab.com/cibersheep/turtl-ut/)
+Install last version on Ubuntu Touch Mobile from https://open-store.io/app/turtl-ut.cibersheep
+
+Github project is deprecated
+
 # Turtl UT is a Tutl client for Ubuntu Touch
 
 Turtl UT is build from official Turtl github source code:
